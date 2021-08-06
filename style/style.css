@@ -1,0 +1,163 @@
+:root{
+    --limeGreen: hsl(163, 72%, 41%);
+    --brightRed:hsl(356, 69%, 56%);
+    --facebook:hsl(208, 92%, 53%);
+    --twitter:hsl(203, 89%, 53%);
+    --instagram:linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+    --youtube:hsl(348, 97%, 39%);
+    --toggleDark:linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    --toggleLight:hsl(230, 22%, 74%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    margin: auto;
+    background-color: hsl(230, 17%, 14%);
+    color:hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.top-background{
+    display: block;
+    height: 220px;
+    background-color: gray;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 0;
+
+}
+
+main{
+    width: 62%;
+    margin: auto;
+    position:relative;
+    bottom: 200px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.top h1{
+    margin-bottom: 2px;
+}
+.top h5{
+    margin-top: 0px;
+}
+
+.grid-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.social{
+    width:220px;
+    height: 200px;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+}
+
+.card-top{
+    height: 5px;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-top.facebook{
+    background-color: var(--facebook);
+}
+
+.card-top.twitter{
+    background-color: var(--twitter);
+}
+
+.card-top.instagram{
+    background-image: var(--instagram);
+}
+
+.card-top.youtube{
+    background-color: var(--youtube);
+}
+
+.social-name{
+    font-size: 12px;
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--toggleDark) ;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 2px;
+    bottom: 1.5px;
+    background-color: #555;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: blue;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+    background-color: var(--toggleLight);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*FIM DO SWITCH*/
