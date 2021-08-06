@@ -60,14 +60,14 @@ header{
 }
 
 .social{
-    width:220px;
-    height: 200px;
+    width: 220px;
+    height: 190px;
     background-color: hsl(228, 28%, 20%);
     border-radius: 5px;
 }
 
 .card-top{
-    height: 3px;
+    height: 4px;
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
@@ -118,7 +118,46 @@ header{
     text-align: center;
     font-size: 10px;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.variation-card{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 11px;
+    font-weight: bolder;
+    color:var(--limeGreen);
+}
+
+.variation-card.down{
+    color:var(--brightRed);
+}
+
+h2{
+    margin-top: 50px;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 100px 100px;
+    border: 1px solid red;
+    grid-gap:20px;
+
+}
+
+.overview{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 160px auto;
+    grid-template-rows: 50px 50px;
+    border-radius: 5px;
+    background-color: hsl(228, 28%, 20%);
+}
+
+.overview span{
+    border: 1px solid white;
 }
 
 /* The switch - the box around the slider */
