@@ -149,15 +149,23 @@ h2{
 
 .overview{
     display: grid;
-    align-items: center;
-    grid-template-columns: 160px auto;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: 140px 30px;
+    grid-template-rows: 20px 45px;
+    grid-gap:0px 20px;
     border-radius: 5px;
     background-color: hsl(228, 28%, 20%);
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .overview span{
     border: 1px solid white;
+}
+
+.overview .icon{
+    display: flex;
+    justify-content: center;
 }
 
 /* The switch - the box around the slider */
