@@ -22,14 +22,14 @@ body{
 .top-background{
     display: block;
     height: 220px;
-    background-color: gray;
+    background-color: hsl(232, 19%, 15%);
     border-radius: 0px 0px 15px 15px;
     z-index: 0;
 
 }
 
 main{
-    width: 62%;
+    width: 1000px;
     margin: auto;
     position:relative;
     bottom: 200px;
@@ -42,7 +42,6 @@ header{
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 .top h1{
     margin-bottom: 2px;
@@ -60,8 +59,8 @@ header{
 }
 
 .social{
-    width: 220px;
-    height: 190px;
+    width: 230px;
+    height: 200px;
     background-color: hsl(228, 28%, 20%);
     border-radius: 5px;
 }
@@ -91,7 +90,6 @@ header{
 .social-name{
     font-size: 12px;
     display: flex;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
@@ -110,6 +108,7 @@ header{
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .followers{
@@ -130,7 +129,7 @@ header{
     color:var(--limeGreen);
 }
 
-.variation-card.down{
+span.down{
     color:var(--brightRed);
 }
 
@@ -139,19 +138,19 @@ h2{
 }
 
 .grid-2{
+    width: 100%;
     display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: 100px 100px;
-    border: 1px solid red;
-    grid-gap:20px;
+    grid-gap:25px;
 
 }
 
 .overview{
     display: grid;
-    grid-template-columns: 140px 30px;
+    grid-template-columns: 120px 50px;
     grid-template-rows: 20px 45px;
-    grid-gap:0px 20px;
+    grid-gap:0px 15px;
     border-radius: 5px;
     background-color: hsl(228, 28%, 20%);
     padding: 20px;
@@ -159,13 +158,31 @@ h2{
     align-items: flex-end;
 }
 
-.overview span{
-    border: 1px solid white;
-}
 
 .overview .icon{
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
+}
+
+.overview-title{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--titleDarkCard);
+}
+
+.overview-number{
+    font-size:30px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.overview-variation{
+    display: flex;
+    font-size:10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    color:var(--limeGreen);
+    font-weight: 700;
 }
 
 /* The switch - the box around the slider */
