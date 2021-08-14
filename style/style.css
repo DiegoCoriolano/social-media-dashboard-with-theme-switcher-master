@@ -51,6 +51,13 @@ header{
     margin-top: 0px;
     color:var(--titleDarkCard);
 }
+.mode div{
+    display: block;
+}
+
+.hr{
+    display: none;
+}
 
 .grid-1{
     display: flex;

@@ -15,16 +15,36 @@
 
 
     .top{
-        width: 400px;
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        
+        justify-content: left; 
+    }
 
+    .hr{
+        display: inline;
+        background-color:rgba(102, 101, 101, 0.705);
+        height: 1px;
+        border-style: none;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 0px;
+    }
+
+    .top-background{
+        width: 100%;
     }
 
     .top h1{
         font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .mode{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-bottom: 20px;
     }
 
 
@@ -33,13 +53,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid red;
     }
 
     .social{
         margin-bottom: 15px;
-        width: 370px;
-        height: 280px;
+        width: 350px;
+        height: 250px;
     }
 
     .grid-2{
@@ -47,7 +66,6 @@
         grid-template-columns: 375px;
         grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px;
         grid-gap:10px;
-        border: 1px solid red;
         padding: 0px;
     }
 
