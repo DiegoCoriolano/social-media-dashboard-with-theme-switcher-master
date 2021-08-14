@@ -9,7 +9,9 @@ var mode=document.getElementsByClassName("toggleText");
 var user=document.getElementsByClassName("user");
 var number=document.getElementsByClassName("number");
 var h2=document.getElementsByClassName("title-overview");
+var overviewNumber=document.getElementsByClassName("overview-number");
 
+var overviewTitle=document.getElementsByClassName("overview-title");
 
 
 
@@ -45,6 +47,14 @@ function lightMode(){
     for(i=0; i<number.length; i++){
         number[i].style.color="black";
     }
+
+    for(i=0; i<overviewNumber.length; i++){
+        overviewNumber[i].style.color="black";
+    }
+
+    for(i=0; i<overviewTitle.length; i++){
+        overviewTitle[i].style.color="hsl(228, 12%, 44%)";
+    }
 }
 
 function darkMode(){
@@ -70,7 +80,13 @@ function darkMode(){
     for(i=0; i<number.length; i++){
         number[i].style.color="white";
     }
+
+    for(i=0; i<overviewNumber.length; i++){
+        overviewNumber[i].style.color="white";
+    }
+
+    for(i=0; i<overviewTitle.length; i++){
+        overviewTitle[i].style.color="hsl(228, 34%, 66%)";
 }
 
-
-
+}
