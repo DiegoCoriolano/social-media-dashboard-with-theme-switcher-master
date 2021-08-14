@@ -64,6 +64,11 @@ header{
     height: 200px;
     background-color: hsl(228, 28%, 20%);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.social:hover{
+    background-color: hsl(228, 28%, 25%);
 }
 
 .card-top{
@@ -158,6 +163,11 @@ h2{
     padding: 20px;
     justify-content: center;
     align-items: flex-end;
+    cursor:pointer;
+}
+
+.overview:hover{
+    background-color: hsl(228, 28%, 25%);
 }
 
 
