@@ -99,8 +99,9 @@ header{
     color: var(--titleDarkCard);
 }
 
-.social-name span{
-    margin-left: 10px;
+.user{
+    font-family: 'Inter', sans-serif;
+    margin-left:10px;
 }
 
 .number{
