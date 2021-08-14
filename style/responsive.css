@@ -1,0 +1,62 @@
+@media screen and (max-width:640px) {
+
+    main{
+        width: 375px;
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: left;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+
+    .top{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+
+    }
+
+    .top h1{
+        font-size: 25px;
+    }
+
+
+    .grid-1{
+        width:375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid red;
+    }
+
+    .social{
+        margin-bottom: 15px;
+        width: 370px;
+        height: 280px;
+    }
+
+    .grid-2{
+        width: 375px;
+        grid-template-columns: 375px;
+        grid-template-rows: 200px;
+        grid-gap:10px;
+        border: 1px solid red;
+        padding: 0px;
+    }
+
+    .overview{
+        width:330px;
+    }
+
+    .attribution{
+        width:90%;
+    }
+    
+}
