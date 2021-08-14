@@ -45,7 +45,7 @@
     .grid-2{
         width: 375px;
         grid-template-columns: 375px;
-        grid-template-rows: 200px;
+        grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px;
         grid-gap:10px;
         border: 1px solid red;
         padding: 0px;
